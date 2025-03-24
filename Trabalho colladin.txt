@@ -1,0 +1,80 @@
+fun main() {
+//Caso 1: If/else:
+   val idade = 18;
+    if (idade >=18){ 
+    println("Maior de idade, já pode ir preso.")
+    }else{
+        println("Tá cedo ainda")
+    }
+    
+//Caso 2: When:
+
+	val Arremesso = 1 
+    when(Arremesso){ 
+    1 -> println("Acertou!")
+    2 -> println("Errou!")
+    3 -> println("AIR-BALL")
+    }
+//Caso 3: For:
+val i = 0
+for (i in 1..10) {
+    println("O número é: $i")    
+    }
+//Caso 4: Array:
+val frutas = arrayOf("Maçã", "Banana", "Laranja", "Uva")
+for (fruta in frutas) {
+    println(fruta)
+}
+//Caso 5: Array 6° elemento:
+val numeros = arrayOf(10, 20, 30, 40, 50, 60, 70)
+if (numeros.size >= 6) {
+    println("O 6º elemento é: ${numeros[5]}") // Índice 5 para o 6º elemento
+} else {
+    println("O array não tem 6 elementos")
+}
+// Caso 6: While:
+var contador = 0
+while (contador < 5) {
+    println("Contador: $contador")
+    contador++
+}
+//Caso 7: Soma:
+fun somar(a: Int, b: Int): Int {
+    return a + b
+}
+
+// Uso:
+println("Soma: ${somar(5, 3)}") // Resultado: 8
+
+
+
+
+//Caso 8: Subtrair:
+fun subtrair(a: Int, b: Int): Int {
+    return a - b
+}
+
+// Uso:
+println("Subtração: ${subtrair(10, 4)}") // Resultado: 6
+
+
+//caso 9: Multiplicação:
+fun multiplicar(a: Int, b: Int): Int {
+    return a * b
+}
+
+// Uso:
+println("Multiplicação: ${multiplicar(7, 6)}") // Resultado: 42
+
+//Caso 10: Divisão:
+fun dividir(a: Int, b: Int): Double {
+    if (b == 0) {
+        throw IllegalArgumentException("Divisor não pode ser zero")
+    }
+    return a.toDouble() / b.toDouble()
+}
+
+// Uso:
+println("Divisão: ${dividir(10, 3)}") // Resultado: 3.333...
+    
+}
